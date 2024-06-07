@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0; 
+  font-family: 'Pretendard', sans-serif;
+  font-size: 16pt; 
+  justify-content: center;
+  align-items: center;
+}
+
+    }
+
+    #wrap {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      height: 150px;
+      background-color: black;
+      width: 100%;
+      
+    }
+
+    #main {
+      width: 154px;
+      height: 100%;
+      text-align: center;
+      float: left;
+    }
+
+    #logo {
+      width: calc(100% - 154px);
+      height: 100%;
+      text-align: center;
+    }
+
+    header img {
+      width: 50px;
+      height: 60px;
+      margin-top: 25px;
+      filter: invert(100%);
+    }
+
+    header #logo img {
+      margin-top: 15px;
+      width: 250px;
+      height: 80px;
+      filter: invert(100%);
+    }
+
+    #menu {
+      background-color: black;
+      width: 100%;
+      height: 85px;
+      margin: 0 auto;
+    }
+
+    #menu nav {
+      width: 100%;
+      height: 85px;
+      position: relative;
+      z-index: 999;
+    }
+
+    #menu nav #main-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #menu nav #main-menu ul li {
+      flex: 1;
+      height: 85px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    #menu nav #main-menu ul li a {
+      width: 100%;
+      text-decoration: none;
+      color: gray;
+      user-select: none;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 15px;
+    }
+
+    #menu nav #main-menu ul li a:hover {
+      color: #000;
+      margin-bottom: -10px;
+    }
+
+    #menu nav #main-menu ul li a:hover::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      height: 1.5px;
+      background-color: #000;
+    }
+
+    footer {
+      height: 100px;
+      background-color: black;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: auto;
+      font-size: 14pt; 
+    }
+
+    footer .inner {
+      padding: 40px 0 60px 0;
+      text-align: center;
+      color: gray;
+    }
+
+#pic1 img {
+  height: 500px;
+  margin-top: 5%;
+  margin-left: 5%;
+  max-width: calc(100% - 10%);
+}
+
+#pic2 img {
+  height: 500px;
+  margin-top: -15%;
+  margin-left: 15%;
+  margin-bottom: 100px; 
+  max-width: calc(100% - 30%); 
+}
+
+#pic3 img {
+  height: 300px;
+  margin-left: 100px; 
+  margin-bottom: 80px; 
+  max-width: calc(100% - 100px);
+}
+
+#text1 {
+  margin-top: -240px; 
+  margin-left: calc(15% + 520px + 55px);
+  width: 530px;
+  margin-bottom: 50px; 
+  max-width: calc(100% - (15% + 520px + 120px)); 
+}
+
+        #text1 p1 {
+      font-size: 24pt; 
+      font-weight: bold; 
+    }
+#text2 {
+  margin-right: 20px; 
+  margin-left: calc(10%);
+  width: 500px;
+  max-width: calc(100% - 20%);
+}
+
+
+    #text2 p1 {
+      font-size: 24pt; 
+      font-weight: bold; 
+    }
+
+    .content {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+<div id="wrap">
+  <header>
+    <div id="main">
+      <a href="#"><img src="https://i.imgur.com/yZ3eJDd.png" alt="B"></a>
+    </div>
+    <div id="logo"><a href="#"><img src="https://i.imgur.com/yMXVDDD.jpeg" alt="로고"></a></div>
+  </header>
+  <div id="menu">
+    <nav>
+      <div id="main-menu">
+        <ul>
+          <li><a href="#">info</a></li>
+          <li><a href="#">survey</a></li>
+          <li><a href="#">reviews</a></li>
+         
+          <li><a href="#">comments</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="content">
+    <div id="pic1"><a href="#"><img src="https://i.imgur.com/VOJbUsq.png" alt="사진1"></a></div>
+    <div id="pic2"><a href="#"><img src="https://i.imgur.com/H7KmR1a.png" alt="사진2"></a></div>
+
+    <div id="text1">
+      <p1> Diptyque</p1>
+      <p>"딥티크는 매장 오픈 때부터 취급해왔습니다. 국가를 불문하고 전 세계적으로 가장 고품격으로 인식하는 브랜드잖아요. 그만큼 개개인에게 어울리는 향을 모두 갖추고 있다고 생각해요. 제품을 추천할 때도 남녀노소 누구에게나 권하는 편입니다."  </p>
+    </div>
+
+    <div id="pic3-container">
+      <div id="text2">
+        <p1>OTHER BRANDS</p1>
+        <p>딥티크 향초의 대안이라 할 수 있는 럭셔리 브랜드들.
+        가격 보다는 퀄리티 높은 향을 누릴 수 있다는 측면에서
+        확실한 대안이라 할 수 있다.</p>
+      </div>
+      <div id="pic3"><a href="#"><img src="https://i.imgur.com/cK1CsQM.png" alt="사진3"></a></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="inner">©디지털프로그래밍 A반 기말프로젝트_Diptyque_천은지, 임지훈, 곽수진, 박지원 </div>
+  </footer>
+</div>
+
+<script>
+  document.getElementById("pic1").addEventListener("mouseenter", function() {
+    this.querySelector("img").style.transform = "scale(1.1)";
+  });
+
+  document.getElementById("pic1").addEventListener("mouseleave", function() {
+    this.querySelector("img").style.transform = "scale(1)";
+  });
+
+  document.getElementById("pic2").addEventListener("mouseenter", function() {
+    this.querySelector("img").style.transform = "scale(1.1)";
+  });
+  document.getElementById("pic2").addEventListener("mouseleave", function() {
+    this.querySelector("img").style.transform = "scale(1)";
+  });
+
+  document.getElementById("pic3").addEventListener("mouseenter", function() {
+    this.querySelector("img").style.transform = "scale(1.1)";
+  });
+
+  document.getElementById("pic3").addEventListener("mouseleave", function() {
+    this.querySelector("img").style.transform = "scale(1)";
+  });
+</script>
+
+</body>
+</html>
